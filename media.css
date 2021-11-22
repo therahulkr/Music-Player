@@ -1,0 +1,51 @@
+
+@media only screen and (max-width: 1024px) {
+    
+    .person{
+        padding-bottom: 50px;
+    }
+    .cc{
+        display: none;
+    }
+    #content{
+        flex-direction: column;
+    }
+    #songs{
+        width: 100%;
+        overflow: scroll;
+    }
+    #queue{
+        width: 99%;
+    }
+    .bottom{
+        
+        top:93vh;
+    }
+    #myProgressBar{
+        width: 90vh;
+    }
+    .bottom{
+        top:95vh;
+    }
+    
+}
+@media only screen and (max-width: 586px){
+    #rightnav{
+        width:70%;
+    }
+    #rightnav .search{
+        width: 60%;
+    }
+    
+    #queue{
+        margin-bottom: 20px;
+    }
+    .icons{
+        margin-left: 0px;
+    }
+}
+    @media only screen and (max-width: 410px){
+        .bottom{
+            top:91vh;
+        }
+    }

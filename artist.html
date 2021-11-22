@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>artist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" />
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <nav id="navbar" >
+
+        <div id="leftnav">
+            <ol class="list">
+                
+                <li><a href="index.html"><img src="logo.png" id="logo"><h1>ninja<br>Studio</h1></a></li>
+                <li class="cc">Favourites</li>
+                <li class="cc">Albums</li>
+                <li class="cc">Playlists</li>
+            </ol>
+            
+        </div>
+
+        <div id="rightnav">
+         <input type="search" class="search" placeholder="search for a song">
+         <button type="submit" class="btn">Q</button>
+        </div>
+        
+   </nav>
+
+   <div id="singersplaylist">
+          <div id="eminem"class="person">
+              <img src="/singers/eminem.jpeg">
+              <ol id="playlist">
+                <li class="songlist"><span>Lose-Yourself</span> <span></span> <i id='0'class="far songItemPlay fa-1x fa-play-circle" ></i>  </li> 
+                <li class="songlist"><span>Rap God</span><i id='1'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+                <li class="songlist"><span>Love the way you Lie</span><i id='2'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+                <li class="songlist"><span>Not-Afraid</span><i id='3'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+            </ol>
+          </div>
+          <div id="zm"class="person">
+            <img src="/singers/zayn.jpeg">
+            <ol id="playlist">
+                <li class="songlist"><span>Dusk Till Down</span> <span></span> <i id='0'class="far songItemPlay fa-1x fa-play-circle" ></i>  </li> 
+                <li class="songlist"><span>Fool for You</span><i id='1'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+                <li class="songlist"><span>Cruel</span><i id='2'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+                <li class="songlist"><span>Pillowtalk</span><i id='3'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+            </ol>
+        </div>
+        <div id="eds"class="person">
+            <img src="/singers/ed.jpeg">
+            <ol id="playlist">
+                <li class="songlist"><span>Thinking Out Loud</span> <span></span> <i id='0'class="far songItemPlay fa-1x fa-play-circle" ></i>  </li> 
+                <li class="songlist"><span>Photograph</span><i id='1'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+                <li class="songlist"><span>Happier</span><i id='2'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+            </ol>
+        </div>
+        <div id="bm"class="person">
+            <img src="/singers/bruno.jpeg">
+            <ol id="playlist">
+                <li class="songlist"><span>Can We Dance</span> <span></span> <i id='0'class="far songItemPlay fa-1x fa-play-circle" ></i>  </li> 
+                <li class="songlist"><span>Old&Crazy</span><i id='1'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+                <li class="songlist"><span>Uptown Funk</span><i id='2'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+            </ol>
+        </div>
+        <div id="jb"class="person">
+            <img src="/singers/jb.jpeg">
+            <ol id="playlist">
+                <li class="songlist"><span>Let Me Love You</span> <span></span> <i id='0'class="far songItemPlay fa-1x fa-play-circle" ></i>  </li> 
+                <li class="songlist"><span>One Time</span><i id='1'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+                <li class="songlist"><span>Lonely</span><i id='2'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+                <li class="songlist"><span>Never Let you go</span><i id='3'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+            </ol>
+        </div>
+   </div>
+
+   <div class="bottom">
+    <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+    
+    <span class="songInfo">
+        <span id="sname"></span>
+        <img src="/playing.gif"  alt="" id="gif" width="50px">
+    
+    </span>
+    <div class="icons">
+        <!-- fontawesome icons -->
+        <i class="fas fa-2x fa-step-backward" id="previous_song"></i>
+        <i class="far fa-2x fa-play-circle" id="masterPlay"></i>            
+        <i class="fas fa-2x fa-step-forward" id="next_song"></i> 
+    </div>
+    <script src="https://kit.fontawesome.com/9cdc7f60da.js" crossorigin="anonymous"></script>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

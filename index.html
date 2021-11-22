@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ninja Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="shortcut icon" href="logo.png" />
+</head>
+
+
+<body onload="show()">
+      <nav id="navbar" >
+
+           <div id="leftnav">
+               <ol class="list">
+                   
+                   <li><a href="#"><img src="logo.png" id="logo"><h1>ninja<br>Studio</h1></a></li>
+                   <li class="cc"><a href="#">Home</a></li>
+                   <li class="cc">Favourites</li>
+                   <li class="cc">Albums</li>
+                   <li class="cc">Playlists</li>
+               </ol>
+               
+           </div>
+
+           <div id="rightnav">
+            <input type="search" class="search" placeholder="search for a song">
+            <button type="submit" class="btn">Q</button>
+           </div>
+           
+      </nav>
+
+
+      <div id="content">
+        
+        
+         <div id="songs">
+
+            <div class="parent">
+                <button id="leftarrow" onclick="moveleft()"><</button>
+                <div class="child" id="i1">
+                    <img src="img/slider3.jpg">
+                </div>
+                <div class="child" id="i2">
+                    <img src="img/slider2.jpg">
+                </div>
+                <div class="child" id="i3">
+                    <img src="img/slider.jpg">
+                </div>
+                <button id="rightarrow" onclick="moveright()">></button>
+            </div>
+            
+             <div class="slide">
+                <h1><a href="artist.html">Popular-Artist's</a></h1>
+                <ol id = "artist" class="list">
+                    <li><img src="/singers/eminem.jpeg"id="circle">Eminem</li>
+                    <li><img src="/singers/zayn.jpeg"id="circle">Zayn</li>
+                    <li><img src="/singers/ed.jpeg"id="circle">Ed Sheeran</li>
+                    <li><img src="/singers/bruno.jpeg"id="circle">Bruno Mars</li>
+                    <li><img src="/singers/jb.jpeg"id="circle">Justin Bieber</li>
+                </ol>
+             </div>
+             <div class="slide">
+                <h1>Recently Played</h1>
+                <ol  class="list">
+                    <li><img src="/singers/eminem.jpeg">Eminem</li>
+                    <li><img src="/singers/zayn.jpeg">Zayn</li>
+                    <li><img src="/singers/eminem.jpeg">Ed Sheeran</li>
+                    <li><img src="/singers/zayn.jpeg">Bruno Mars</li>
+                    <li><img src="/singers/eminem.jpeg">Imagine Dragons</li>
+                </ol>
+             </div>
+             <div class="slide">
+                <h1>Latest Hindi</h1>
+                <ol  class="list">
+                    <li><img src="/singers/eminem.jpeg">Eminem</li>
+                    <li><img src="/singers/zayn.jpeg">Zayn</li>
+                    <li><img src="/singers/eminem.jpeg">Ed Sheeran</li>
+                    <li><img src="/singers/zayn.jpeg">Bruno Mars</li>
+                    <li><img src="/singers/eminem.jpeg">Imagine Dragons</li>
+                </ol>
+             </div>
+             
+        </div> 
+        
+        <aside id="queue">
+           <p class="center" style="margin-top:10px;">Your PlayList</p>
+           <ol id="playlist">
+               <li class="songlist"><span>Mann-Bharrya</span> <span></span> <i id='0'class="far songItemPlay fa-1x fa-play-circle" ></i>  </li> 
+               <li class="songlist"><span>Lahore</span><i id='1'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+               <li class="songlist"><span>So-High</span><i id='2'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+               <li class="songlist"><span>Mercy</span><i id='3'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+               <li class="songlist"><span>Hasi Ban Gaye</span><i id='4'class="far songItemPlay fa-1x fa-play-circle" ></i></li>
+           </ol>
+        </aside>
+      </div>
+      
+
+      <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        
+        <span class="songInfo">
+            <span id="sname"></span>
+            <img src="/playing.gif"  alt="" id="gif" width="50px">
+        
+        </span>
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-2x fa-step-backward" id="previous_song"></i>
+            <i class="far fa-2x fa-play-circle" id="masterPlay"></i>            
+            <i class="fas fa-2x fa-step-forward" id="next_song"></i> 
+        </div>
+        
+      </div>
+      
+      <script src="app.js"></script>
+      <script src="https://kit.fontawesome.com/9cdc7f60da.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

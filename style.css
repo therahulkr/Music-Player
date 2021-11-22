@@ -1,0 +1,291 @@
+
+/* -------------------utility-class----------------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Zen Kurenaido', sans-serif;
+    color:white;
+}
+
+.center{
+    text-align: center;
+}
+
+.flex_center{
+    justify-content: center;
+}
+
+:root {
+    --heading-color: #1e90ff;
+    --text-color: #ffffff;
+    --backgrnd:#0c1027;
+}
+
+.search{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+        border: 1px;
+        padding: 2px;
+        width: 200px;
+        background-color: #12193e;
+}
+
+.btn{
+    border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: #12193e;
+        color: white;
+        border: 1px;
+        padding: 2px;
+        cursor: pointer;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-size: 20px;
+    color: white;
+}
+
+body{
+    background-color: var(--backgrnd);
+}
+audio{
+    display: block;
+    width: 260px;
+    height: 25px;
+}
+
+/* --------------------------navigation-bar(id=navbar)------------------------------ */
+
+#navbar{
+   display: flex;
+   width: 100%;
+   height: 80px;
+   background-color: var(--backgrnd);
+   color:white;
+   align-items: center;
+}
+
+#leftnav{
+    display: block;
+    width: 50%;
+    margin-left:25px;
+}
+#leftnav .list{
+    justify-content: space-between;
+}
+
+#leftnav li{
+    padding: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+#leftnav li a{
+    text-decoration: none;
+}
+
+.cc:hover,#leftnav li a:hover{
+     color:cadetblue;
+}
+
+#rightnav{
+    display: block;
+    width: 50%;
+    text-align: right;
+    margin-right:25px;
+}
+
+
+
+#logo{
+    width: 15px;
+    color:white
+}
+
+
+/*----------------------------------carousel---------------------------------*/
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  
+  }
+  .child{
+       width: 60%;
+       margin-left: 10px;
+       margin-right: 10px;
+       display: none;
+       
+  }
+  .child img{
+      width: 100%;
+      height: 100%;
+      transition: 1s ease-in;
+  }
+  
+  #leftarrow,#rightarrow{
+      display: inline-block;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 15px;
+      border-radius: 50%;
+      border: 0;
+      width: 30px;
+      height: 30px;
+      color: gray;
+      opacity: 0.7;
+  }
+
+
+
+
+/* ----------------------content (id=content)=>(1.songs/2.queue)--------------------------------- */
+
+#content{
+    
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    margin-bottom: 55px;
+    display: flex;
+    /* overflow: hidden; */
+}
+
+
+
+#songs{
+    width: 75%;
+    background-color: var(--backgrnd);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+#songs h1{
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.list li{
+    text-align: center;
+    list-style: none;
+    margin-top:10px;
+}
+
+#artist #circle{
+    border-radius: 50%;
+}
+.list img{
+    display: block;
+    width: 100px;
+    margin:0px 25px;
+}
+
+
+#queue{
+    width: 25%;
+    background-image: linear-gradient(45deg,#2857a4,#0c1027);
+    position: sticky;
+    border-top: 1px solid white;
+    
+}
+ #playlist{
+    margin-top: 10px;
+ }
+ .songlist{
+     display: flex;
+     justify-content: space-between;
+     margin:4px 8px;
+     background-color: pink;
+     padding: 10px;
+     border-radius: 40px;
+ }
+ .songlist span{
+     color: black;
+     font-size: 0.8rem;
+ }
+ .songlist i{
+     display: block;
+     color:black;
+     cursor: pointer;
+ }
+
+
+/* ----------------------------bottom------------------------------------- */
+
+.bottom{
+    position: fixed;
+    width: 100%;
+    
+    background-color: black;
+    opacity: 0.9;
+    top:91vh;
+    margin:auto;
+}
+.icons{
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 30px;
+    text-align: left;
+    color: white;
+    width: 50%;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.icons img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+#gif{
+    opacity: 0;
+}
+.songInfo{
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+#myProgressBar{
+    display: block;
+    margin:auto;
+    width: 75vw; 
+    cursor: pointer;
+    
+}
+
+
+
+/* ---------------------------------artist.html----------------------- */
+#singersplaylist{
+    width: 100%;
+    height: 80vh;
+    border-top:2px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#singersplaylist img{
+    width: 150px;
+    border-radius: 50%;
+    border:2px solid black;
+}
+
+.person{
+    margin:30px 30px;
+}
